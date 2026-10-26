@@ -1,0 +1,10 @@
+{
+  "minecraft_version": "1.21.7",
+  "loader": "forge",
+  "java_version": 21,
+  "status": "scaffold-only",
+  "release_status": "not-published",
+  "project_path": null,
+  "artifact_name": "auto-stack-refill+mc1.21.7-forge.jar",
+  "notes": "Target folder is scaffolded in the support catalog. Loader-specific build files, implementation, official loader-version pinning, and CI build verification are still required."
+}

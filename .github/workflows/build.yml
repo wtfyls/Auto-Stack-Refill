@@ -1,4 +1,4 @@
-name: Build
+name: Build and validate
 
 on:
   push:
@@ -9,29 +9,37 @@ permissions:
   contents: read
 
 jobs:
-  build:
+  validate-target-matrix:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate version and loader catalog
+        run: python scripts/validate_targets.py
 
+  build-forge-1-20-1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
       - name: Set up Java 17
         uses: actions/setup-java@v4
         with:
           distribution: temurin
-          java-version: '17'
-
+          java-version: "17"
       - name: Set up Gradle
         uses: gradle/actions/setup-gradle@v4
         with:
-          gradle-version: '8.8'
-
-      - name: Build mod
+          gradle-version: "8.8"
+      - name: Build Forge 1.20.1 baseline
         run: gradle build
-
       - name: Upload mod jar
         uses: actions/upload-artifact@v4
         with:
-          name: auto-stack-refill
+          name: auto-stack-refill-mc1.20.1-forge
           path: build/libs/*.jar
           if-no-files-found: error
