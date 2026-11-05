@@ -28,6 +28,6 @@
 <p>See <a href="SUPPORT_MATRIX.md">the support matrix</a> for the project status.</p>
 
 <h3>Issues &amp; Suggestions</h3>
-<p>Found a bug or have an idea? <a href="https://github.com/wtfyls/Auto-Stack-Refill/issues/new">Open a ticket on GitHub</a>. Please include your Minecraft version, loader, mod version and logs when reporting a bug.</p>
+<p>Found a bug or have an idea? <a href="https://github.com/wtfyls/Auto-Stack-Refill/issues/new?template=bug_report.yml">Open a ticket on GitHub</a>. Please include your Minecraft version, loader, mod version and logs when reporting a bug.</p>
 
 <p>Before opening a ticket, check if someone has already reported the same thing.</p>
