@@ -1,22 +1,11 @@
-# Auto Stack Refill — version support
+# Supported Versions
 
-✅ = CI build verified for this mod target. This confirms compilation only, not in-game testing.
-❌ = not built and verified yet.
+Auto Stack Refill is currently available for **Minecraft 1.20.1**.
 
 | Minecraft version | Forge | Fabric | NeoForge |
 |---|:---:|:---:|:---:|
-| 1.20.1 | ✅ | ❌ | ❌ |
-| 1.21.1 | ❌ | ❌ | ❌ |
-| 1.21.11 | ❌ | ❌ | ❌ |
-| 26.1 | ❌ | ❌ | ❌ |
-| 26.1.1 | ❌ | ❌ | ❌ |
-| 26.2 | ❌ | ❌ | ❌ |
-| 26.3 | ❌ | ❌ | ❌ |
+| 1.20.1 | ✅ | ✅ | — |
 
-## Notes
+Download the file that matches your Minecraft version and loader from [CurseForge](https://www.curseforge.com/minecraft/mc-mods/auto-stack-refill). Don't mix files between loaders.
 
-- Only the **Forge 1.20.1** project currently has a successful CI build. Its refill behavior still needs in-game testing.
-- All other listed loader/version combinations are planned targets, not downloadable releases.
-- Other Minecraft versions have been removed from this repository's target matrix.
-- Target folders are under `targets/<version>/<loader>/`; their `TARGET.json` files indicate whether the target is verified or scaffold-only.
-- Java targets: 1.20.1 uses Java 17; 1.21.1 and 1.21.11 use Java 21; 26.1, 26.1.1, 26.2, and 26.3 use Java 25.
+Other Minecraft versions and loaders aren't available right now. I'll update this page when that changes.
