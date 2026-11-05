@@ -1,54 +1,33 @@
-# Auto Stack Refill
+<h1>Auto Stack Refill</h1>
 
-[![Build](https://github.com/wtfyls/Auto-Stack-Refill/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/wtfyls/Auto-Stack-Refill/actions/workflows/build.yml)
+<p>
+  <a href="https://www.curseforge.com/minecraft/mc-mods/auto-stack-refill"><img src="https://raw.githubusercontent.com/wtfyls/Lunchtime-Cozy-Create-Farming/main/assets/curseforgelarge.png" alt="Download on CurseForge" height="48"></a>
+  &nbsp;
+  <a href="https://discord.gg/68yhDdFpnx"><img src="https://raw.githubusercontent.com/wtfyls/Lunchtime-Cozy-Create-Farming/main/assets/discordlarge.png" alt="Join the Lunchtime Discord" height="48"></a>
+  &nbsp;
+  <a href="https://www.patreon.com/cw/Fierolam"><img src="https://raw.githubusercontent.com/wtfyls/Lunchtime-Cozy-Create-Farming/main/assets/patreonlarge.png" alt="Support Lunchtime on Patreon" height="48"></a>
+  &nbsp;
+  <a href="https://www.instagram.com/lunchbutt/"><img src="https://raw.githubusercontent.com/wtfyls/Lunchtime-Cozy-Create-Farming/main/assets/instagramlarge.png" alt="Follow on Instagram" height="48"></a>
+  &nbsp;
+  <a href="https://www.tiktok.com/@lunchbutt"><img src="https://raw.githubusercontent.com/wtfyls/Lunchtime-Cozy-Create-Farming/main/assets/tiktoklarge.png" alt="Follow on TikTok" height="48"></a>
+</p>
 
-**Auto Stack Refill** is a Minecraft inventory QoL mod designed to refill your selected hotbar slot from a matching stack in your inventory when the stack you're holding runs out.
+<p>Ever run out of blocks while building and have to open your inventory just to grab another stack? Yeah, this mod is here to save you that little trip.</p>
 
-## Features
+<p>Auto Stack Refill automatically grabs the next matching stack from your inventory when the one you're holding runs out. That's it. No extra mechanics, just a small quality-of-life feature.</p>
 
-- **Automatic hotbar refills** — refill an emptied selected slot from another matching stack in your inventory.
-- **Match-aware refills** — choose stacks matching the same item and item data instead of combining unlike variants.
-- **Loader-portable project** — the roadmap covers Forge, Fabric, and NeoForge, tracked separately for each Minecraft version.
-- **Version-specific tracking** — every target has its own status so planned ports aren't confused with verified builds.
+<h3>Install</h3>
+<ol>
+  <li>Install Minecraft 1.20.1 with Forge or Fabric.</li>
+  <li>Download the matching file from CurseForge.</li>
+  <li>Put the file in your <code>mods</code> folder and launch the game.</li>
+</ol>
 
-The behavior is currently implemented in the Forge 1.20.1 project. CI compilation passes, but the mod still needs in-game testing before its behavior can be considered fully verified.
+<h3>Versions &amp; Loaders</h3>
+<p>Minecraft 1.20.1 — Forge and Fabric.</p>
+<p>See <a href="SUPPORT_MATRIX.md">the support matrix</a> for the project status.</p>
 
-## Minecraft versions and loaders
+<h3>Issues &amp; Suggestions</h3>
+<p>Found a bug or have an idea? <a href="https://github.com/wtfyls/Auto-Stack-Refill/issues/new">Open a ticket on GitHub</a>. Please include your Minecraft version, loader, mod version and logs when reporting a bug.</p>
 
-These are the **only versions currently in the project roadmap**. A ✅ means the Auto Stack Refill target has passed CI compilation; ❌ means that target has not yet been built and verified. These marks describe this mod, not general availability of the loader itself.
-
-| Minecraft version | Forge | Fabric | NeoForge |
-|:--|:--:|:--:|:--:|
-| 1.20.1 | ✅ | ❌ | ❌ |
-| 1.21.1 | ❌ | ❌ | ❌ |
-| 1.21.11 | ❌ | ❌ | ❌ |
-| 26.1 | ❌ | ❌ | ❌ |
-| 26.1.1 | ❌ | ❌ | ❌ |
-| 26.2 | ❌ | ❌ | ❌ |
-| 26.3 | ❌ | ❌ | ❌ |
-
-For the detailed target status, see [SUPPORT_MATRIX.md](SUPPORT_MATRIX.md). Planned targets are not downloadable releases; each one needs a loader- and version-specific implementation, a successful build, and runtime testing.
-
-## Build the current Forge 1.20.1 project
-
-Requirements: **Java 17** and **Gradle 8.8**.
-
-```bash
-gradle build
-```
-
-The compiled mod jar is produced in `build/libs/`.
-
-You can also check the latest [GitHub Actions build](https://github.com/wtfyls/Auto-Stack-Refill/actions).
-
-## Project layout
-
-- `src/main/` — current Forge 1.20.1 implementation
-- `targets/<version>/<loader>/` — per-version and per-loader target status
-- `support/minecraft-versions.json` — canonical list of Minecraft versions in scope
-- `SUPPORT_MATRIX.md` — compact version/loader support table
-- `platforms/README.md` — notes for loader-specific ports
-
-## License
-
-**All Rights Reserved (ARR).** No rights to use, modify, or redistribute this project are granted without prior written permission. See [LICENSE](LICENSE).
+<p>Before opening a ticket, check if someone has already reported the same thing.</p>
